@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+     <h1>Update</h1>
+     <form action="/student/updateAStudent" method="post">
+          <div class="form-group">
+               <label>
+                    Id
+               </label>
+               <input type="number" name="id" class="form-control" aria-describedby="postTitle"
+                    placeholder="Your id (ex. 1, 2)" required>
+          </div>
+          <div class="form-group">
+               <label>
+                    New name
+               </label>
+               <input type="text" name="name" class="form-control" aria-describedby="postTitle"
+                    placeholder="Your name...ex: Andrey, Jo" required>
+          </div>
+          <div class=" form-group">
+               <label>
+                    New email
+               </label>
+               <input type="email" name="email" class="form-control" aria-describedby="postTitle"
+                    placeholder="Your email address here... ex: email@example.com" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+     <%- include("partials/footer") -%>

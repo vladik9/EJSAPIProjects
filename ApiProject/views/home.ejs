@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+     <h1>Data from Table</h1>
+     <table class="minimalistBlack">
+          <thead>
+               <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+               </tr>
+          </thead>
+
+
+          <tbody>
+               <% records.forEach( (item)=>{ %>
+                    <tr>
+                         <td>
+                              <%= item.id %>
+                         </td>
+                         <td>
+                              <%= item.name %>
+                         </td>
+                         <td>
+                              <%= item.email %>
+                         </td>
+                    </tr>
+                    <% }) %>
+          </tbody>
+     </table>

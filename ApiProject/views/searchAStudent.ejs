@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+     <h1>Search a student</h1>
+     <form action="/student/searchStudent" method="post">
+          <div class="form-group">
+               <label>
+                    Enter an id here:
+               </label>
+               <input type="number" name="id" class="form-control" aria-describedby="id"
+                    placeholder="Your id (ex. 1, 2)" required>
+          </div>
+
+          <button type=" submit" class="btn btn-primary">Submit</button>
+     </form>
+     <%- include("partials/footer") -%>
